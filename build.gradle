@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+description = 'Elliptic Curve Cryptography. Web3J test.'
+
+mainClassName = 'EllipticCurveTest.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    compile ('org.web3j:core:4.8.3')
+}
